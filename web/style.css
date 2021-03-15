@@ -1,0 +1,55 @@
+body {
+   background-color: #36393f;
+}
+
+
+@font-face {
+  font-family: 'Intra';
+  src: url('fonts/FredokaOne-Regular.ttf') format('truetype');
+}
+
+.up{
+   margin-top: 13px;
+   height: 78px;
+}
+
+.down{
+   height:360px;
+}
+
+.edit {
+   width: 90%;
+   padding: 20px 20px;
+   margin-right: 5%;
+   margin-left: 5%;
+   margin-bottom:  20px;
+   background: #E9EFF6;
+   border-radius: 20px;
+   font-family: Intra;
+   font-size: 20px;
+   resize: none;
+   line-height: 0.9em;
+   outline: none;
+   overflow: hidden;
+}
+
+.btn {
+  border-radius: 30px;
+  border: 0px;
+  padding: 25px 84px;
+  font-family: Intra;
+  font-size: 65px;
+  text-align: center;
+  color: #93c9fe;
+  background: #d35e5e;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #db4141;
+  transition: 0.5s;
+}

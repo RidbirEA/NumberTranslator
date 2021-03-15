@@ -1,0 +1,26 @@
+<html>
+  <head>
+  	<link href='style.css' rel='stylesheet' type='text/css'>
+  	<script type="text/javascript" src="/eel.js"></script>
+  	<title>Flip</title>
+  	<link rel="shortcut icon" href="images/favicon1.ico" type="image/x-icon">
+  </head>
+
+  <body>
+  	<textarea class="edit up" placeholder="Write the number" id='Write_text'></textarea>
+    <textarea class="edit down" placeholder="Read the number" id='Read_text' readonly='readonly'></textarea>
+  	<button class="btn" id='Button'>Flip</button>
+
+    <script>
+      let btn = document.querySelector('#Button');
+      btn.addEventListener('click', NumberTranslator);
+      async function NumberTranslator() {
+        let num = document.querySelector('#Write_text').value;
+        let x = await eel.NumberTranslator(num)();
+        document.getElementById('Read_text').innerHTML = x;
+      }
+      NumberTranslator();
+    </script>
+
+  </body>
+</html>
